@@ -1,0 +1,10 @@
+apiVersion: v2
+name: ping-pong-api
+description: A Helm chart for ping-pong Node.js API
+type: application
+version: 0.1.0
+appVersion: "1.0.0"
+keywords:
+  - nodejs
+  - api
+  - ping-pong
