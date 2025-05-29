@@ -3,7 +3,7 @@ locals {
     default = "eu-central-1"
     tokyo   = "ap-northeast-1"
   }
-  environment        = "test"
+  environment        = "prod"
   frankfurt_azs      = slice(data.aws_availability_zones.frankfurt.names, 0, 3)
   frankfurt_vpc_cidr = "172.1.0.0/16"
   cluster_name       = "test-eks"

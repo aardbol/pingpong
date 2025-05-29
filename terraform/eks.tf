@@ -66,6 +66,6 @@ module "eks_eu_test" {
   }
 
   tags = {
-    Environment = "test"
+    Environment = local.environment
   }
 }
