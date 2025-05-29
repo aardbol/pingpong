@@ -41,3 +41,9 @@ helm upgrade --install ping-pong-api $HELM_CHART_PATH \
 ## Use
 
 After deplying the application to k8s, you can access `https://ping-pong-${IMAGE_TAG::7}.biconomy.io/ping`
+
+## TODO
+
+Set up AWS account for ECR and EKS, and set up the following secrets in the GitHub repository:
+- `AWS_ACCESS_KEY_ID`
+- `AWS_SECRET_ACCESS_KEY`
