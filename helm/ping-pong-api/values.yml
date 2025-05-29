@@ -1,8 +1,9 @@
 replicaCount: 2
 image:
-  repository: xxx/ping-pong-api
+  # TODO: point to the correct ECR repository and tag
+  repository: ECR_REGISTRY/ping-pong-api
   pullPolicy: IfNotPresent
-  tag: "0.1.0"
+  tag: "GITHUB_SHA"
 nameOverride: ""
 fullnameOverride: ""
 serviceAccount:
