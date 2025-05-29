@@ -1,9 +1,9 @@
 module "eks_eu_test" {
   source  = "terraform-aws-modules/eks/aws"
-  version = "~> 20.0"
+  version = "~> 20.31"
 
   cluster_name             = local.cluster_name
-  cluster_version          = "1.29"
+  cluster_version          = "1.31"
   vpc_id                   = module.vpc_frankfurt.vpc_id
   subnet_ids               = module.vpc_frankfurt.private_subnets
   control_plane_subnet_ids = module.vpc_frankfurt.intra_subnets
